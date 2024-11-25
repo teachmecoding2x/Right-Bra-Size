@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Bra Size Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Enhanced Bra Size Finder</h1>
+        <form id="bra-calculator">
+            <div class="input-group">
+                <label for="underbust">Underbust (in inches):</label>
+                <input type="number" id="underbust" required>
+            </div>
+            <div class="input-group">
+                <label for="bust">Bust (in inches):</label>
+                <input type="number" id="bust" required>
+            </div>
+            <div class="input-group">
+                <label for="activity">Select Activity:</label>
+                <select id="activity">
+                    <option value="everyday">Everyday Wear</option>
+                    <option value="sundress">Sundress</option>
+                    <option value="swimwear">Swimwear</option>
+                    <option value="saree">Saree</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="fabric">Preferred Fabric:</label>
+                <select id="fabric">
+                    <option value="cotton">Cotton</option>
+                    <option value="lace">Lace</option>
+                    <option value="silk">Silk</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="bodyType">Body Type:</label>
+                <select id="bodyType">
+                    <option value="balanced">Balanced</option>
+                    <option value="oneLarger">One Breast Larger</option>
+                    <option value="flatChest">Flat Chest</option>
+                    <option value="heavyBreasts">Heavy Breasts</option>
+                </select>
+            </div>
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
